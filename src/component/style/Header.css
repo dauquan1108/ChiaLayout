@@ -1,0 +1,119 @@
+:root {
+  --border-radius: 20px;
+}
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a747a;
+    padding: 10px 0;
+}
+.contentHeader {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.contentLeft {
+    flex: 5;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+.logo {
+    width: 20%;
+    height: 45px;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search {
+    width: 100%;
+    height: 45px;
+    border-radius: var(--border-radius);
+    background-color: #ffffff;
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentRight {
+    flex: 2;
+    width: 100%;
+    height: 45px;
+    margin-left: 10px; 
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.account {
+    padding: 2px 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.options {
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media all and (max-width: 1130px) {
+    .contentHeader {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+
+/* // max -> mức 1 => nội dung chính sẽ co theo window, thanh search co, các tp còn lại giữ nguyên */
+@media all and (max-width: 800px) {
+  .contentHeader {
+    width: 100%;
+  }
+  .header{
+    padding: 10px 0;
+  }
+}
+
+/* // mức 2 -> mức 3 (fix) => ẩn bớt account vs thu gọn option */
+@media all and (max-width: 576px) {
+    .header{
+        padding: 0;
+      }
+  .search {
+    display: none;
+  }
+  .account {
+    display: none;
+  } 
+  .options {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  } 
+}
