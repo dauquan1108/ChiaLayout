@@ -1,0 +1,4 @@
+.hostNews {
+    display: flex;
+    flex-direction: row;
+}

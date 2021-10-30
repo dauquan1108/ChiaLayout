@@ -4,11 +4,13 @@ import React, { useState } from "react";
 //style
 import "./styles/HostNews.css";
 
-function HostNews({ item, index }) {
-  console.log(item, index);
+function HostNews(props) {
+  const { item, index } = props;
   return (
     <div className="hostNews">
-      <p>newss</p>
+      <div>
+        <img src={item.image} alt="anh" />
+      </div>
     </div>
   );
 }

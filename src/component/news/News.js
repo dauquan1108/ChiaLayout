@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 //component
 import HostNews from "./hostNews/HostNews";
+import Avatar from "../avatar/Avatar";
 
 //style
 import "./styles/News.css";
@@ -13,12 +14,6 @@ import a3 from "../images/t3.png";
 import a4 from "../images/t4.JPG";
 import a5 from "../images/t5.png";
 import a6 from "../images/t6.png";
-import a7 from "../images/t7.png";
-import a8 from "../images/t8.png";
-import a9 from "../images/t9.jpg";
-import a10 from "../images/t10.jpg";
-import a11 from "../images/t11.jpg";
-
 function News(props) {
   const [listNews, setListNews] = useState([
     {
@@ -52,48 +47,131 @@ function News(props) {
       image: a6,
       titles: "Trung ương thảo luận về phòng, chống Covid-19",
     },
-    {
-      id: 7,
-      image: a7,
-      titles:
-        "Xe điện Microlino 2.0: hệ dẫn động mới, nội thất hiện đại hơn, giá hơn 300 triệu",
-    },
-    { id: 8, image: a8, titles: "Apple phát hành iOS 13.4 beta 5" },
-    {
-      id: 9,
-      image: a9,
-      titles:
-        "Xe điện Microlino 2.0: hệ dẫn động mới, nội thất hiện đại hơn, giá hơn 300 triệu",
-    },
-    {
-      id: 10,
-      image: a10,
-      titles:
-        "ĐÁNH GIÁ E-SCOOTER TURBOANT X7: GIẢI PHÁP SÁNG GIÁ THAY THẾ XE đạp",
-    },
-    {
-      id: 11,
-      image: a11,
-      titles: "FIREFOX TRÒN 15 TUỔI: TRỖI DẬY, GỤC NGÃ VÀ CUỘC PHỤC HƯNG VỀ",
-    },
+    // {
+    //   id: 7,
+    //   image: a7,
+    //   titles:
+    //     "Xe điện Microlino 2.0: hệ dẫn động mới, nội thất hiện đại hơn, giá hơn 300 triệu",
+    // },
+    // { id: 8, image: a8, titles: "Apple phát hành iOS 13.4 beta 5" },
+    // {
+    //   id: 9,
+    //   image: a9,
+    //   titles:
+    //     "Xe điện Microlino 2.0: hệ dẫn động mới, nội thất hiện đại hơn, giá hơn 300 triệu",
+    // },
+    // {
+    //   id: 10,
+    //   image: a10,
+    //   titles:
+    //     "ĐÁNH GIÁ E-SCOOTER TURBOANT X7: GIẢI PHÁP SÁNG GIÁ THAY THẾ XE đạp",
+    // },
+    // {
+    //   id: 11,
+    //   image: a11,
+    //   titles: "FIREFOX TRÒN 15 TUỔI: TRỖI DẬY, GỤC NGÃ VÀ CUỘC PHỤC HƯNG VỀ",
+    // },
   ]);
-  const showsListNew = (item, index) => {
-    if (
-      index === 0 ||
-      index === 1 ||
-      index === 2 ||
-      index === 3 ||
-      index === 4 ||
-      index === 5
-    ) {
-      <HostNews index={index} item={item} />;
-    }
-  };
+  const [status, setStatus] = useState("noiBat");
+
+  const listHostNew = listNews.map((item, index) => {
+    console.log("index", index);
+    const img = item.image;
+    return (
+      <React.Fragment>
+        {index === 0 && (
+          <div className="newsContentLeft">
+            <img className="imageHost" src={img} alt="anh" />
+          </div>
+        )}
+        {index !== 0 && (
+          <div className="newsContentRight">
+            <div className="itemRight">
+              <div className="itemRightImg">
+                <img src={img} alt="hostNews" />
+              </div>
+              <div className="ItemRightTitle">
+                <span>Những ứng viên sáng giá cho Nobel Y</span>
+              </div>
+            </div>
+          </div>
+        )}
+      </React.Fragment>
+    );
+  });
+
   return (
     <div className="news">
-      {listNews.map((item, index) => {
-        return showsListNew(item, index);
-      })}
+      <React.Fragment>
+        <div className="hostNews">
+          <div className="title">
+            <div className="titleText ">
+              <button
+                type="button"
+                className={`button ${status === "noiBat" && "titleActive"} `}
+                onClick={() => setStatus("noiBat")}
+              >
+                Nổi bật
+              </button>
+            </div>
+            <div className="titleText ">
+              <button
+                type="button"
+                className={`button ${status === "tinTuc" && "titleActive"} `}
+                onClick={() => setStatus("tinTuc")}
+              >
+                Tin tức
+              </button>
+            </div>
+            <div className="titleText">
+              <button
+                type="button"
+                className={`button ${status === "xuHuong" && "titleActive"} `}
+                onClick={() => setStatus("xuHuong")}
+              >
+                Xu hướng
+              </button>
+            </div>
+            <div className="titleText">
+              <button
+                type="button"
+                className={`button ${status === "thoiSu" && "titleActive"} `}
+                onClick={() => setStatus("thoiSu")}
+              >
+                Thời sự
+              </button>
+            </div>
+            <div className="titleText">
+              <button
+                type="button"
+                className={`button ${status === "TheThao" && "titleActive"} `}
+                onClick={() => setStatus("TheThao")}
+              >
+                Thể thao
+              </button>
+            </div>
+            <div className="titleText">
+              <button
+                type="button"
+                className={`button ${status === "PhapLuat" && "titleActive"} `}
+                onClick={() => setStatus("PhapLuat")}
+              >
+                Pháp luật
+              </button>
+            </div>
+            <div className="titleText">
+              <button
+                type="button"
+                className={`button ${status === "dienDan" && "titleActive"} `}
+                onClick={() => setStatus("dienDan")}
+              >
+                Diễn đàn
+              </button>
+            </div>
+          </div>
+          <div className="newsContent">{listHostNew}</div>
+        </div>
+      </React.Fragment>
     </div>
   );
 }
