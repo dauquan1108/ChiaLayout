@@ -37,7 +37,7 @@
 
 .newsContentLeft {
     background-color: aliceblue;
-    width: 45%;
+    width: 40%;
     height: 320px;
     border-radius: 12px;
     overflow: hidden;
@@ -50,7 +50,7 @@
 
 .newsContentRight {
     background-color: rgb(21, 116, 199);
-    width: 45%;
+    width: 40%;
     height: 320px;
     display: flex;
     flex-direction: column;

@@ -1,0 +1,119 @@
+:root {
+    --background-color: #b1abab;
+}
+
+.contents {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #17eaf5;
+    padding: 10px 0;
+}
+
+.contents_body {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentLefts {
+    margin-right: 5px;
+    flex: 5;
+    background-color: blue;
+}
+
+.contentRights {
+    height: 500px;
+    margin-left: 5px;
+    flex: 2;
+    background-color: black;
+}
+
+.post {
+    padding: 1px 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+}
+
+.postLefts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputPost {
+    margin-left: 10px;
+}
+
+.postRights {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imagesPost {
+    width: 25px;
+}
+
+.phoneBook {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+@media all and (max-width: 1130px) {
+    .contents {
+        padding: 0;
+    }
+    .contents_body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .contentLefts {
+        flex: none;
+        width: 100%;
+        margin: 0;
+    }
+    .contentRights {
+        flex: none;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+/* // max -> mức 1 => nội dung chính sẽ co theo window, thanh search co, các tp còn lại giữ nguyên */
+
+@media all and (max-width: 800px) {}
+
+
+/* // mức 2 -> mức 3 (fix) => ẩn bớt account vs thu gọn option */
+
+@media all and (max-width: 576px) {
+    .postRights {
+        display: none;
+    }
+}

@@ -1,0 +1,142 @@
+:root {
+    --border-radius: 20px;
+    --color-text: #ffffff;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a747a;
+    padding: 10px 0;
+}
+
+span {
+    font-family: OpenSans;
+}
+
+.contentHeader {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentLeft {
+    flex: 5;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    width: 20%;
+    height: 45px;
+    color: var(--color-text);
+    font-size: var(--border-radius);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search {
+    width: 100%;
+    height: 45px;
+    margin: 0 10%;
+    border-radius: var(--border-radius);
+    background-color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgSearch {
+    width: 30px;
+    height: 30px;
+}
+
+.contentRight {
+    flex: 2;
+    width: 100%;
+    height: 45px;
+    margin-left: 10px;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.account {
+    margin-left: 10px;
+    color: var(--color-text);
+    font-size: 15px;
+}
+
+.options {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media all and (max-width: 1130px) {
+    .contentHeader {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+
+/* // max -> mức 1 => nội dung chính sẽ co theo window, thanh search co, các tp còn lại giữ nguyên */
+
+@media all and (max-width: 800px) {
+    .contentHeader {
+        width: 100%;
+    }
+    .header {
+        padding: 10px 0;
+    }
+    .search {
+        margin: 0;
+    }
+    .contentRight {
+        margin: 0;
+        justify-content: center;
+    }
+    .options {
+        display: none;
+    }
+}
+
+
+/* // mức 2 -> mức 3 (fix) => ẩn bớt account vs thu gọn option */
+
+@media all and (max-width: 576px) {
+    .contentLeft {
+        padding-left: 10px;
+    }
+    .user {
+        display: none;
+    }
+    .search {
+        display: none;
+    }
+    .options {
+        width: 120px;
+        display: inline;
+        display: flex;
+    }
+}

@@ -30,14 +30,14 @@
 
 .newsContent {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 10px;
     justify-content: space-between;
 }
 
 .newsContentLeft {
     background-color: aliceblue;
-    width: 45%;
+    width: 400px;
     height: 320px;
     border-radius: 12px;
     overflow: hidden;
@@ -50,8 +50,8 @@
 
 .newsContentRight {
     background-color: rgb(21, 116, 199);
-    width: 45%;
-    height: 320px;
+    /* width: 400px;
+    height: 320px; */
     display: flex;
     flex-direction: column;
     align-items: center;

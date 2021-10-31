@@ -53,7 +53,7 @@ function News(props) {
     const img = item.image;
     return (
       <React.Fragment>       
-        <img className="imageHost" src={img} alt="anh" />
+            <img className="imageHost" src={img} alt="anh" />
       </React.Fragment>
     )});
     
@@ -61,14 +61,14 @@ function News(props) {
     const img = item.image;
     return (
       <React.Fragment>       
-        <div className="itemRight">
-          <div className="itemRightImg">
-            <img src={img} alt="hostNews" />
-          </div>
-          <div className="ItemRightTitle">
-            <span>Những ứng viên sáng giá cho Nobel Y</span>
-          </div>
-        </div>
+            <div className="itemRight">
+              <div className="itemRightImg">
+                <img src={img} alt="hostNews" />
+              </div>
+              <div className="ItemRightTitle">
+                <span>Những ứng viên sáng giá cho Nobel Y</span>
+              </div>
+            </div>
       </React.Fragment>
     );
   });

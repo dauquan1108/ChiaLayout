@@ -49,26 +49,43 @@ function News(props) {
     },
   ]);
   const [status, setStatus] = useState("noiBat");
-  const listHostNewLeft =listNews.slice(0, 1).map((item) => {
+
+
+  const listHostNewLeft =listNews.slice(1, 5).map((item) => {
     const img = item.image;
     return (
       <React.Fragment>       
-        <img className="imageHost" src={img} alt="anh" />
+          {/* <div className="newsContentLeft">
+            <img className="imageHost" src={img} alt="anh" />
+          </div> */}
+      
+            <div className="itemRight">
+              <div className="itemRightImg">
+                <img src={img} alt="hostNews" />
+              </div>
+              <div className="ItemRightTitle">
+                <span>Những ứng viên sáng giá cho Nobel Y</span>
+              </div>
+            </div>
       </React.Fragment>
-    )});
+    )})
     
   const listHostNewRight = listNews.slice(1, 5).map((item) => {
     const img = item.image;
     return (
       <React.Fragment>       
-        <div className="itemRight">
-          <div className="itemRightImg">
-            <img src={img} alt="hostNews" />
-          </div>
-          <div className="ItemRightTitle">
-            <span>Những ứng viên sáng giá cho Nobel Y</span>
-          </div>
-        </div>
+          {/* <div className="newsContentLeft">
+            <img className="imageHost" src={img} alt="anh" />
+          </div> */}
+      
+            <div className="itemRight">
+              <div className="itemRightImg">
+                <img src={img} alt="hostNews" />
+              </div>
+              <div className="ItemRightTitle">
+                <span>Những ứng viên sáng giá cho Nobel Y</span>
+              </div>
+            </div>
       </React.Fragment>
     );
   });
@@ -143,8 +160,9 @@ function News(props) {
             </div>
           </div>
           <div className="newsContent">
-            <div className='newsContentLeft'>{listHostNewLeft}</div>
-            <div className='newsContentRight'>{listHostNewRight}</div>
+            <div className='newContentLeft'>{listHostNewLeft}</div>
+            
+            <div className='newContentRight'>{listHostNewRight}</div>
           </div>
         </div>
       </React.Fragment>

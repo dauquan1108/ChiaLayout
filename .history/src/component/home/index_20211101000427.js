@@ -4,7 +4,7 @@ import Header from "./header/Header";
 import Content from "./content/Content";
 import Footer from "./footer/Footer";
 //style
-import "./style/Home.css";
+import "../style/Home.css";
 
 function Index(props) {
   return (

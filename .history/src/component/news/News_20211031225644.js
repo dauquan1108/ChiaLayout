@@ -47,28 +47,53 @@ function News(props) {
       image: a6,
       titles: "Trung ương thảo luận về phòng, chống Covid-19",
     },
+    // {
+    //   id: 7,
+    //   image: a7,
+    //   titles:
+    //     "Xe điện Microlino 2.0: hệ dẫn động mới, nội thất hiện đại hơn, giá hơn 300 triệu",
+    // },
+    // { id: 8, image: a8, titles: "Apple phát hành iOS 13.4 beta 5" },
+    // {
+    //   id: 9,
+    //   image: a9,
+    //   titles:
+    //     "Xe điện Microlino 2.0: hệ dẫn động mới, nội thất hiện đại hơn, giá hơn 300 triệu",
+    // },
+    // {
+    //   id: 10,
+    //   image: a10,
+    //   titles:
+    //     "ĐÁNH GIÁ E-SCOOTER TURBOANT X7: GIẢI PHÁP SÁNG GIÁ THAY THẾ XE đạp",
+    // },
+    // {
+    //   id: 11,
+    //   image: a11,
+    //   titles: "FIREFOX TRÒN 15 TUỔI: TRỖI DẬY, GỤC NGÃ VÀ CUỘC PHỤC HƯNG VỀ",
+    // },
   ]);
   const [status, setStatus] = useState("noiBat");
-  const listHostNewLeft =listNews.slice(0, 1).map((item) => {
+
+  const listHostNew = listNews.slice(0,0).map((item) => {
+    // console.log("index", index);
     const img = item.image;
     return (
       <React.Fragment>       
-        <img className="imageHost" src={img} alt="anh" />
-      </React.Fragment>
-    )});
-    
-  const listHostNewRight = listNews.slice(1, 5).map((item) => {
-    const img = item.image;
-    return (
-      <React.Fragment>       
-        <div className="itemRight">
-          <div className="itemRightImg">
-            <img src={img} alt="hostNews" />
+          <div className="newsContentLeft">
+            <img className="imageHost" src={img} alt="anh" />
           </div>
-          <div className="ItemRightTitle">
-            <span>Những ứng viên sáng giá cho Nobel Y</span>
+        {/* {index !== 0 && (
+          <div className="newsContentRight">
+            <div className="itemRight">
+              <div className="itemRightImg">
+                <img src={img} alt="hostNews" />
+              </div>
+              <div className="ItemRightTitle">
+                <span>Những ứng viên sáng giá cho Nobel Y</span>
+              </div>
+            </div>
           </div>
-        </div>
+        )} */}
       </React.Fragment>
     );
   });
@@ -142,10 +167,7 @@ function News(props) {
               </button>
             </div>
           </div>
-          <div className="newsContent">
-            <div className='newsContentLeft'>{listHostNewLeft}</div>
-            <div className='newsContentRight'>{listHostNewRight}</div>
-          </div>
+          <div className="newsContent">{listHostNew}</div>
         </div>
       </React.Fragment>
     </div>
