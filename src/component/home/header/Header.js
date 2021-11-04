@@ -33,13 +33,9 @@ function Header(props) {
             </div>
           </div>
           <div className="options">
-            <img
-              className="imgSearch"
-              src={Notifications}
-              alt="notifications"
-            />
-            <img className="imgSearch" src={Chat} alt="chat" />
-            <img className="imgSearch" src={gear} alt="gear" />
+            <img className="iconImg" src={Notifications} alt="notifications" />
+            <img className="iconImg" src={Chat} alt="chat" />
+            <img className="iconImg" src={gear} alt="gear" />
           </div>
         </div>
       </div>

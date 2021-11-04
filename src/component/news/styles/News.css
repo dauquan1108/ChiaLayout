@@ -1,3 +1,8 @@
+:root {
+    --width-Content: 48%;
+    --height-Content: 250px;
+}
+
 .hostNews {
     background-color: aqua;
     border-radius: 12px;
@@ -13,15 +18,23 @@
 }
 
 .titleText {
-    padding: 3px 10px;
+    padding-right: 15px;
+    /* padding: 3px 15px 0 0; */
 }
 
 .button {
     border: none;
     background-color: transparent;
     padding: 1px;
+    font-family: OpenSans;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
 }
 
 .titleActive {
@@ -37,32 +50,67 @@
 
 .newsContentLeft {
     background-color: aliceblue;
-    width: 45%;
-    height: 320px;
+    width: var(--width-Content);
+    height: var(--height-Content);
     border-radius: 12px;
     overflow: hidden;
+    position: relative;
+
+   
 }
 
 .imageHost {
     width: 100%;
     height: 100%;
+    position: absolute;
+}
+.personalInformation {
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;   
+}
+.personalInformation span {
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    padding-left: 10px;
+}
+.personalInformation span:last-child {
+    font-size: 11px;
+    color: #c1c1c1;
+}
+.ItemLeftTitle {
+    font-size: 18px;
+    font-weight: bold;
+    bottom: 50px;
+    left: 10px;
+    position: absolute;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
 }
 
 .newsContentRight {
-    background-color: rgb(21, 116, 199);
-    width: 45%;
-    height: 320px;
+    /* background-color: rgb(21, 116, 199); */
+    width: var(--width-Content);
+    height: var(--height-Content);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .itemRight {
     width: 100%;
-    height: 60px;
+    height: 44px;
     margin-bottom: 5px;
-    background-color: aliceblue;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -85,6 +133,10 @@ img {
 }
 
 .ItemRightTitle {
+    font-family: SegoeUI;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
     width: 80%;
     overflow: hidden;
     text-overflow: ellipsis;

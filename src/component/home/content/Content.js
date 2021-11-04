@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // Component
-import Avatar from "../../avatar/Avatar";
+import Avatart from "../../avatar/Avatar";
 import PhoneBook from "../../phoneBook/PhoneBook";
 import News from "../../news/News";
 
@@ -61,8 +61,8 @@ function Content(props) {
         <div className="contentLefts">
           <div className="post">
             <div className="postLefts">
-              <Avatar src={avatar} />
-              <h4 className="inputPost">Bạn đang nghĩ gì...?</h4>
+              <Avatart src={avatar} />
+              <p className="inputPost">Bạn đang nghĩ gì...?</p>
             </div>
             <div className="postRights">
               <img className="imagesPost" src={album} alt="album" />

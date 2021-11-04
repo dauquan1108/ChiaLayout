@@ -1,33 +1,36 @@
-.phoneBooks {
-    width: 80px;
-    height: 70px;
-    margin: 2px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    /* background-color: aliceblue; */
-}
-.imagesPhoneBook {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-.imagesPhoneBooks{
-    width: 100%;
-    height: 100%;
-}
-.titlePhoneBook{
-    font-family: OpenSans;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000;
+
+@media all and (max-width: 1920px) {
+    .phoneBooks {
+        width: 58px;
+        height: 58px;
+        margin: 2px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        /* background-color: aliceblue; */
+    }
+    .imagesPhoneBook {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .imagesPhoneBooks{
+        width: 100%;
+        height: 100%;
+    }
+    .titlePhoneBook{
+        font-family: OpenSans;
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #000;
+    }
 }
 
 @media all and (max-width: 1130px) { 

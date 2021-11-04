@@ -14,6 +14,7 @@ import a3 from "../images/t3.png";
 import a4 from "../images/t4.JPG";
 import a5 from "../images/t5.png";
 import a6 from "../images/t6.png";
+import avatar from "../images/avatar.jpg";
 function News(props) {
   const [listNews, setListNews] = useState([
     {
@@ -35,38 +36,49 @@ function News(props) {
     {
       id: 4,
       image: a4,
-      titles: "Trung ương thảo luận về phòng, chống Covid-19",
+      titles:
+        "Hướng dẫn xét nghiệm, cách ly khi người dân đi lại giữa các tỉnh",
     },
     {
       id: 5,
       image: a5,
-      titles: "Một số tỉnh miền Tây cho người về quê cách ly tại",
+      titles:
+        "Hướng dẫn xét nghiệm, cách ly khi người dân đi lại giữa các tỉnh",
     },
     {
       id: 6,
       image: a6,
-      titles: "Trung ương thảo luận về phòng, chống Covid-19",
+      titles: "Một số tỉnh miền Tây cho người về quê cách ly tại",
     },
   ]);
   const [status, setStatus] = useState("noiBat");
-  const listHostNewLeft =listNews.slice(0, 1).map((item) => {
+  const listHostNewLeft = listNews.slice(0, 1).map((item) => {
     const img = item.image;
     return (
-      <React.Fragment>       
+      <React.Fragment>
         <img className="imageHost" src={img} alt="anh" />
+        <div className="personalInformation">
+          <Avatar src={avatar} />
+          <span>Đậu Xuân Quân</span>
+          <span>16 phút trước</span>
+        </div>
+        <div className="ItemLeftTitle">
+          <span>{item.titles}</span>
+        </div>
       </React.Fragment>
-    )});
-    
-  const listHostNewRight = listNews.slice(1, 5).map((item) => {
+    );
+  });
+
+  const listHostNewRight = listNews.slice(1, 6).map((item) => {
     const img = item.image;
     return (
-      <React.Fragment>       
+      <React.Fragment>
         <div className="itemRight">
           <div className="itemRightImg">
             <img src={img} alt="hostNews" />
           </div>
           <div className="ItemRightTitle">
-            <span>Những ứng viên sáng giá cho Nobel Y</span>
+            <span>{item.titles}</span>
           </div>
         </div>
       </React.Fragment>
@@ -143,8 +155,8 @@ function News(props) {
             </div>
           </div>
           <div className="newsContent">
-            <div className='newsContentLeft'>{listHostNewLeft}</div>
-            <div className='newsContentRight'>{listHostNewRight}</div>
+            <div className="newsContentLeft">{listHostNewLeft}</div>
+            <div className="newsContentRight">{listHostNewRight}</div>
           </div>
         </div>
       </React.Fragment>
