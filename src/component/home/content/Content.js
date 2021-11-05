@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Avatart from "../../avatar/Avatar";
 import PhoneBook from "../../phoneBook/PhoneBook";
 import News from "../../news/News";
+import BlockShopPing from "../../blockShopPing/BlockShopPing";
 
 // styles
 import "./style/Content.css";
@@ -79,6 +80,9 @@ function Content(props) {
           </div>
           <div className="news">
             <News />
+          </div>
+          <div className="blockShopPing">
+            <BlockShopPing />
           </div>
         </div>
         <div className="contentRights"></div>

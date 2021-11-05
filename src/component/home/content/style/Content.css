@@ -1,5 +1,5 @@
 :root {
-    --background-color: #b1abab;
+    --background-color: #faf6f6;
 }
 .contents {
     width: 100%;
@@ -78,6 +78,15 @@
     display: flex;
     flex-direction: column;
     padding-top: 5px;
+}
+.blockShopPing {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: var(--background-color);
 }
 
 @media all and (max-width: 1130px) {
