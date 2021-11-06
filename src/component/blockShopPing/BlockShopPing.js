@@ -31,27 +31,33 @@ function BlockShopPing(props) {
   const [title, setTitle] = useState([
     {
       id: 1,
-      titles: "Philip giảm giá mùa dịch siêu hot luôn n...",
+      titles:
+        "Philip giảm giá mùa dịch siêu ropTypes là một cách tốt để xác thực đầu vào của",
     },
     {
       id: 2,
-      titles: "Philip giảm giá mùa dịch siêu hot luôn n...",
+      titles:
+        "Philip giảm giá mùa dịch ropTypes là một cách tốt để xác thực đầu vào của",
     },
     {
       id: 3,
-      titles: "Philip giảm giá mùa dịch siêu hot luôn n...",
+      titles:
+        "Philip giảm giá mùa dịch siêu hot ropTypes là một cách tốt để xác thực đầu vào của.",
     },
     {
       id: 4,
-      titles: "Philip giảm giá mùa dịch siêu hot luôn n...",
+      titles:
+        "Philip giảm giá mùa dịch siêu hot ropTypes là một cách tốt để xác thực đầu vào của.",
     },
     {
       id: 5,
-      titles: "Philip giảm giá mùa dịch siêu hot luôn n...",
+      titles:
+        "Philip giảm giá mùa dịch siêu hot luôn ropTypes là một cách tốt để xác thực đầu vào của.",
     },
     {
       id: 6,
-      titles: "Philip giảm giá mùa dịch siêu hot luôn n...",
+      titles:
+        "Philip giảm giá mùa dịch siêu hot luôn ropTypes là một cách tốt để xác thực đầu vào của",
     },
   ]);
 
@@ -71,7 +77,9 @@ function BlockShopPing(props) {
           return (
             <div className="blockShopPingRightItem">
               <img key={item.id} src={shopPing} />
-              <a href={item.titles}>{item.titles}</a>
+              <a href={item.titles} title={item.titles}>
+                {item.titles}
+              </a>
             </div>
           );
         })}

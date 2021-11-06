@@ -5,6 +5,7 @@ import Avatart from "../../avatar/Avatar";
 import PhoneBook from "../../phoneBook/PhoneBook";
 import News from "../../news/News";
 import BlockShopPing from "../../blockShopPing/BlockShopPing";
+import BlockListNews from "../../blockListNews/BlockListNews";
 
 // styles
 import "./style/Content.css";
@@ -83,6 +84,9 @@ function Content(props) {
           </div>
           <div className="blockShopPing">
             <BlockShopPing />
+          </div>
+          <div className="blockListNews">
+            <BlockListNews />
           </div>
         </div>
         <div className="contentRights"></div>
