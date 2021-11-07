@@ -77,7 +77,7 @@ function BlockShopPing(props) {
           return (
             <div className="blockShopPingRightItem">
               <img key={item.id} src={shopPing} />
-              <a href={item.titles} title={item.titles}>
+              <a href="#" title={item.titles}>
                 {item.titles}
               </a>
             </div>

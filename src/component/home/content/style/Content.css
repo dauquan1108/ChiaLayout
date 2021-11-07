@@ -20,14 +20,8 @@
 .contentLefts {
     margin-right: 5px;
     flex: 5;
-    background-color: blue;
 }
-.contentRights {
-    height: 500px;
-    margin-left: 5px;
-    flex: 2;
-    background-color: black;
-}
+
 .post {
     height: 52px;
     padding: 1px 30px;
@@ -88,6 +82,18 @@
     padding: 10px;
     background-color: var(--background-color);
 }
+
+.contentRights {
+    flex: 2;
+    margin-left: 5px;
+    background-color: rgb(190, 173, 173);
+}
+.weather {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
 
 @media all and (max-width: 1130px) {
     .contents {

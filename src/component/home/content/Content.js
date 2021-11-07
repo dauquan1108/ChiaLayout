@@ -7,6 +7,10 @@ import News from "../../news/News";
 import BlockShopPing from "../../blockShopPing/BlockShopPing";
 import BlockListNews from "../../blockListNews/BlockListNews";
 
+// component right
+import Weather from "../../contentRights/weather/Weather";
+import Advertisement from "../../contentRights/advertisement/Advertisement";
+import Utilities from "../../contentRights/utilities/Utilities";
 // styles
 import "./style/Content.css";
 // images
@@ -89,7 +93,13 @@ function Content(props) {
             <BlockListNews />
           </div>
         </div>
-        <div className="contentRights"></div>
+        <div className="contentRights">
+          <div className="weather">
+            <Weather />
+          </div>
+          <Advertisement />
+          <Utilities />
+        </div>
       </div>
     </div>
   );

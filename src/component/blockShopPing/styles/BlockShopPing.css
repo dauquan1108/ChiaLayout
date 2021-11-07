@@ -28,6 +28,7 @@
     margin:  0 10px;
 }
 .blockShopPingRightItem a {
+    text-decoration: none;
     font-family: OpenSans;
     font-size: 14px;
     color: #ff4600;
