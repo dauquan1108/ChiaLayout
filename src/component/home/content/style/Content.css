@@ -89,7 +89,6 @@
     background-color: rgb(190, 173, 173);
 }
 .weather {
-    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
 }

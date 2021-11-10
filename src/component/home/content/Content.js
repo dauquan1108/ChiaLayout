@@ -11,6 +11,9 @@ import BlockListNews from "../../blockListNews/BlockListNews";
 import Weather from "../../contentRights/weather/Weather";
 import Advertisement from "../../contentRights/advertisement/Advertisement";
 import Utilities from "../../contentRights/utilities/Utilities";
+import AdvertisementBig from "../../contentRights/advertisement/AdvertisementBig";
+import HotTopic from "../../contentRights/hotTopic/HotTopic";
+
 // styles
 import "./style/Content.css";
 // images
@@ -97,8 +100,14 @@ function Content(props) {
           <div className="weather">
             <Weather />
           </div>
-          <Advertisement />
+          <div className="advertisement">
+            <Advertisement />
+          </div>
           <Utilities />
+          <div className="advertisement">
+            <AdvertisementBig />
+          </div>
+          <HotTopic />
         </div>
       </div>
     </div>

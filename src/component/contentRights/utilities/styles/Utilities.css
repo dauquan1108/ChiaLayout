@@ -11,3 +11,30 @@
     color: #292929;
     margin: 0;
 }
+
+.ItemService {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.ItemUtilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 70px;
+    margin: 5px;
+}
+.ItemUtilities img {
+    width: 45px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.ItemUtilities span {
+    font-size: 13px;
+}
