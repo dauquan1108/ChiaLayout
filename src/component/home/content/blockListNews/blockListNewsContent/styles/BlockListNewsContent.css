@@ -34,14 +34,14 @@
 .individual a {
     margin-left: 10px;
     font-size: 15px;
+    color: #0a747a;
 }
  
 
 .individual p {
     margin: 10px;
-    color: red;
+    color: #9A9A9A;
 }
-
 
 .blockListNewsContentButton {
     display: flex;
@@ -51,13 +51,18 @@
     justify-content: space-between;
 }
 
+.blockListNewsContentButton .icon{
+    display: flex;
+    color: #606770;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 .blockListNewsContentButton .icon img{
     width: 20px;
     height: 20px;
-    margin: 0 20px;
+    margin: 0 10px 0 20px;
 }
-.blockListNewsContentButton .icon{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.blockListNewsContentButton .icon span {
+    font-size: 13px;
 }
