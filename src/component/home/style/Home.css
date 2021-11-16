@@ -3,5 +3,15 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    
+}
+body {
+    margin: 0;
+    color: #000;
+    font-size: 13px;
+    font-family: Open Sans,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+    font-feature-settings: "tnum";
+    font-weight: 600;
 }

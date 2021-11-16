@@ -1,5 +1,5 @@
 :root {
-    --background-color: #faf6f6;
+    --background-color: #ffffff;
 }
 .contents {
     width: 100%;
@@ -7,7 +7,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #17eaf5;
+    background-color: #F0F2F5;
     padding: 10px 0;
 }
 .contents_body {
@@ -38,10 +38,9 @@
     align-items: center;
     justify-content: center;
 }
-.inputPost {
-    font-family: OpenSans;
+.postLefts p {
+    color: #535353;
     font-size: 15px;
-    font-weight: 600;
     margin-left: 10px;
 }
 
@@ -86,7 +85,7 @@
 .contentRights {
     flex: 2;
     margin-left: 5px;
-    background-color: rgb(190, 173, 173);
+    /* background-color: rgb(190, 173, 173); */
 }
 .weather {
     display: flex;

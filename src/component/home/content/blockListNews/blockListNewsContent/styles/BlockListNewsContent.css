@@ -1,0 +1,63 @@
+.blockListNewsContent {
+    padding: 15px 10px;
+    background-color: #fff;
+    margin-bottom: 10px; 
+    border-radius: 12px;
+}
+
+.blockListNewsContentTop {
+    display: flex;
+    flex-direction: row;
+}
+ 
+.blockListNewsContentTopLeft img {
+    width: 183px;
+    height: 140px;
+    border-radius: 5px;
+}
+.blockListNewsContentTopRight {
+    margin-left: 10px;
+}
+.blockListNewsContentTopRight a {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.individual {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.individual a {
+    margin-left: 10px;
+    font-size: 15px;
+}
+ 
+
+.individual p {
+    margin: 10px;
+    color: red;
+}
+
+
+.blockListNewsContentButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.blockListNewsContentButton .icon img{
+    width: 20px;
+    height: 20px;
+    margin: 0 20px;
+}
+.blockListNewsContentButton .icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

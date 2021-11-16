@@ -21,14 +21,12 @@
 }
 .contentText p {
     color:  var(--text-color);
-    font-family: OpenSans;
     font-size: 12px;
     line-height: 2;
 }
 
 .contentText p a {
     color: var(--text-color);
-    font-family: OpenSans;
     font-size: 12px;
     text-decoration: none;
 }
@@ -47,20 +45,16 @@
 }
 .contentFooterBottom p {
     color: #17b582;
-    font-family: OpenSans;
     font-size: 12px;
-    font-weight: 600;
 }
 
 .contentFooterBottom span {
     color: var(--text-color);
-    font-family: OpenSans;
     font-size: 12px;
     line-height: 2;
 }
 .contentFooterBottom a {
     color: var(--text-color);
-    font-family: OpenSans;
     font-size: 12px;
     text-decoration: none;
 }

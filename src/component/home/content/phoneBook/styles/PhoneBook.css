@@ -1,0 +1,53 @@
+
+@media all and (max-width: 1920px) {
+    .phoneBooks {
+        width: 58px;
+        height: 58px;
+        margin: 2px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        /* background-color: aliceblue; */
+    }
+    .imagesPhoneBook {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .imagesPhoneBooks{
+        width: 100%;
+        height: 100%;
+    }
+    .titlePhoneBook{
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #000;
+    }
+}
+
+@media all and (max-width: 1130px) { 
+    .phoneBooks {
+        width: 94px;
+    }
+}
+
+/* // max -> mức 1 => nội dung chính sẽ co theo window, thanh search co, các tp còn lại giữ nguyên */
+@media all and (max-width: 800px) {
+    .phoneBooks {
+        width: 68px;
+    }
+}
+
+/* // mức 2 -> mức 3 (fix) => ẩn bớt account vs thu gọn option */
+@media all and (max-width: 576px) {
+    .phoneBooks {
+        width: 79px;
+    }
+}

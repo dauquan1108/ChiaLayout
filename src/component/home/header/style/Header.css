@@ -14,10 +14,6 @@
     background-color: #0a747a;
 }
 
-span {
-    font-family: OpenSans;
-}
-
 .contentHeader {
     width: 60%;
     display: flex;
@@ -54,6 +50,9 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.search span{
+    color: #535353;
 }
 
 .iconImg {

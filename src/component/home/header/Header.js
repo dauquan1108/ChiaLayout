@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 
 // Component
-import Avatart from "../../avatar/Avatar";
+import Avatars from "../../avatar/Avatar";
 
 // style
 import "./style/Header.css";
 // image
-// import search from "../images/searching.png";
 import Notifications from "../../images/notifications.png";
 import Chat from "../../images/chat.png";
 import gear from "../../images/gear.png";
@@ -27,7 +26,7 @@ function Header(props) {
         </div>
         <div className="contentRight">
           <div className="user">
-            <Avatart src={avatar} />
+            <Avatars src={avatar} />
             <div className="account">
               <span>Đậu Xuân Quân</span>
             </div>
