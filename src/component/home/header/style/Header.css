@@ -1,9 +1,7 @@
-
 :root {
     --border-radius: 20px;
     --color-text: #ffffff;
 }
-
 .header {
     height: 46px;
     width: 100%;
@@ -13,7 +11,6 @@
     justify-content: center;
     background-color: #0a747a;
 }
-
 .contentHeader {
     width: 60%;
     display: flex;
@@ -21,7 +18,6 @@
     align-items: center;
     justify-content: space-between;
 }
-
 .contentLeft {
     flex: 5;
     margin-right: 10px;
@@ -56,8 +52,8 @@
 }
 
 .iconImg {
-    width: 16.7px;
-    height: 16.7px;
+    width: 18px;
+    height: 18px;
 }
 
 .contentRight {
@@ -93,55 +89,30 @@
     justify-content: space-between;
 }
 
-
-
-
-
-@media all and (max-width: 1130px) {
+/*PC*/
+@media all and (max-width: 1024px) {
     .contentHeader {
-        width: 100%;
+        width:100%;
         padding: 0 10px;
     }
 }
 
-
-/* // max -> mức 1 => nội dung chính sẽ co theo window, thanh search co, các tp còn lại giữ nguyên */
-
-@media all and (max-width: 800px) {
-    .contentHeader {
-        width: 100%;
-    }
-    .header {
-        padding: 10px 0;
-    }
+/*Máy tính bảng*/
+@media all and (max-width: 740px) {
     .search {
-        margin: 0;
+        display: none;
+    }
+    .contentLeft {
+        flex: 3;
     }
     .contentRight {
-        margin: 0;
-        justify-content: center;
-    }
-    .options {
-        display: none;
+        flex: 2;
     }
 }
 
-
-/* // mức 2 -> mức 3 (fix) => ẩn bớt account vs thu gọn option */
-
-@media all and (max-width: 576px) {
-    .contentLeft {
-        padding-left: 10px;
-    }
-    .user {
-        display: none;
-    }
-    .search {
-        display: none;
-    }
+/*trên điện thoại*/
+@media all and (max-width: 600px) {
     .options {
-        width: 120px;
-        display: inline;
-        display: flex;
+        display: none;
     }
 }

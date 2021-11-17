@@ -5,6 +5,7 @@ import Avatars from "../../avatar/Avatar";
 
 // style
 import "./style/Header.css";
+
 // image
 import Notifications from "../../images/notifications.png";
 import Chat from "../../images/chat.png";
@@ -21,7 +22,6 @@ function Header(props) {
           </div>
           <div className="search">
             <span>Google</span>
-            {/* <img className="imgSearch" src={search} alt="search" /> */}
           </div>
         </div>
         <div className="contentRight">

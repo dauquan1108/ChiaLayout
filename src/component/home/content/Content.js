@@ -42,76 +42,76 @@ import a19 from "../../images/a19.jpg";
 import a20 from "../../images/a20.jpg";
 
 function Content(props) {
-  const [listPhoneBook, setListPhoneBook] = useState([
-    { id: 1, image: a1, names: "Kho phim" },
-    { id: 2, image: a2, names: "Facebook" },
-    { id: 3, image: a3, names: "Kho nhạc" },
-    { id: 4, image: a4, names: "Google" },
-    { id: 5, image: a5, names: "Youtube" },
-    { id: 6, image: a6, names: "VnExpress" },
-    { id: 7, image: a7, names: "24h.com" },
-    { id: 8, image: a8, names: "Kho nhạc" },
-    { id: 9, image: a9, names: "Facebook" },
-    { id: 10, image: a11, names: "Kho nhạc" },
-    { id: 11, image: a11, names: "Kho phim" },
-    { id: 12, image: a12, names: "Facebook" },
-    { id: 13, image: a13, names: "Kho nhạc" },
-    { id: 14, image: a14, names: "Facebook" },
-    { id: 15, image: a15, names: "Kho phim" },
-    { id: 16, image: a16, names: "Facebook" },
-    { id: 17, image: a17, names: "Google" },
-    { id: 18, image: a18, names: "VnExpress" },
-    { id: 19, image: a19, names: "Kho nhạc" },
-    { id: 20, image: a20, names: "Facebook" },
-  ]);
-  return (
-    <div className="contents">
-      <div className="contents_body">
-        <div className="contentLefts">
-          <div className="post">
-            <div className="postLefts">
-              <Avatart src={avatar} />
-              <p>Bạn đang nghĩ gì...?</p>
+    const [listPhoneBook, setListPhoneBook] = useState([
+        { id: 1, image: a1, names: "Kho phim" },
+        { id: 2, image: a2, names: "Facebook" },
+        { id: 3, image: a3, names: "Kho nhạc" },
+        { id: 4, image: a4, names: "Google" },
+        { id: 5, image: a5, names: "Youtube" },
+        { id: 6, image: a6, names: "VnExpress" },
+        { id: 7, image: a7, names: "24h.com" },
+        { id: 8, image: a8, names: "Kho nhạc" },
+        { id: 9, image: a9, names: "Facebook" },
+        { id: 10, image: a11, names: "Kho nhạc" },
+        { id: 11, image: a11, names: "Kho phim" },
+        { id: 12, image: a12, names: "Facebook" },
+        { id: 13, image: a13, names: "Kho nhạc" },
+        { id: 14, image: a14, names: "Facebook" },
+        { id: 15, image: a15, names: "Kho phim" },
+        { id: 16, image: a16, names: "Facebook" },
+        { id: 17, image: a17, names: "Google" },
+        { id: 18, image: a18, names: "VnExpress" },
+        { id: 19, image: a19, names: "Kho nhạc" },
+        { id: 20, image: a20, names: "Facebook" },
+    ]);
+    return (
+        <div className="contents">
+            <div className="contents_body">
+                <div className="contentLefts">
+                    <div className="post">
+                        <div className="postLefts">
+                            <Avatart src={avatar} />
+                            <p>Bạn đang nghĩ gì...?</p>
+                        </div>
+                        <div className="postRights">
+                            <img className="imagesPost" src={album} alt="album" />
+                            <img className="imagesPost" src={attachment} alt="attachment" />
+                            <img className="imagesPost" src={smile} alt="smile" />
+                        </div>
+                    </div>
+                    <div className="phoneBook">
+                        {listPhoneBook.map((item) => {
+                            return (
+                                <PhoneBook key={item.id} image={item.image} titles={item} />
+                            );
+                        })}
+                    </div>
+                    <div className="news">
+                        <News />
+                    </div>
+                    <div className="blockShopPing">
+                        <BlockShopPing />
+                    </div>
+                    <div className="blockListNews">
+                        <BlockListNews />
+                    </div>
+                </div>
+                <div className="contentRights">
+                    <div className="weather">
+                        <Weather />
+                    </div>
+                    <div className="advertisement">
+                        <Advertisement />
+                    </div>
+                    <Utilities />
+                    <div className="advertisement">
+                        <AdvertisementBig />
+                    </div>
+                    <HotTopic />
+                </div>
             </div>
-            <div className="postRights">
-              <img className="imagesPost" src={album} alt="album" />
-              <img className="imagesPost" src={attachment} alt="attachment" />
-              <img className="imagesPost" src={smile} alt="smile" />
-            </div>
-          </div>
-          <div className="phoneBook">
-            {listPhoneBook.map((item) => {
-              return (
-                <PhoneBook key={item.id} image={item.image} titles={item} />
-              );
-            })}
-          </div>
-          <div className="news">
-            <News />
-          </div>
-          <div className="blockShopPing">
-            <BlockShopPing />
-          </div>
-          <div className="blockListNews">
-            <BlockListNews />
-          </div>
         </div>
-        <div className="contentRights">
-          <div className="weather">
-            <Weather />
-          </div>
-          <div className="advertisement">
-            <Advertisement />
-          </div>
-          <Utilities />
-          <div className="advertisement">
-            <AdvertisementBig />
-          </div>
-          <HotTopic />
-        </div>
-      </div>
-    </div>
-  );
+    );
 }
 
 Content.propTypes = {};

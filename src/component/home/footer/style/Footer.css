@@ -58,3 +58,22 @@
     font-size: 12px;
     text-decoration: none;
 }
+
+/*PC*/
+@media all and (max-width: 1024px) {
+    .contentFooterTop,
+    .contentFooterBottom {
+        width: 90%;
+    }
+
+}
+
+/*Máy tính bảng*/
+@media all and (max-width: 740px) {
+
+}
+
+/*trên điện thoại*/
+@media all and (max-width: 600px) {
+
+}

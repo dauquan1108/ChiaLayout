@@ -32,22 +32,27 @@
     }
 }
 
-@media all and (max-width: 1130px) { 
+/*PC*/
+@media all and (max-width: 1024px) {
     .phoneBooks {
-        width: 94px;
+        width: 85px;
+        height: 65px;
+        margin: 5px;
     }
 }
 
-/* // max -> mức 1 => nội dung chính sẽ co theo window, thanh search co, các tp còn lại giữ nguyên */
-@media all and (max-width: 800px) {
+/*Máy tính bảng*/
+@media all and (max-width: 740px) {
     .phoneBooks {
-        width: 68px;
+        width: 55px;
+        height: 55px;
     }
 }
 
-/* // mức 2 -> mức 3 (fix) => ẩn bớt account vs thu gọn option */
-@media all and (max-width: 576px) {
+/*trên điện thoại*/
+@media all and (max-width: 600px) {
     .phoneBooks {
-        width: 79px;
+        width: 60px;
+        height: 50px;
     }
 }

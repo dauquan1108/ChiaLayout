@@ -146,3 +146,20 @@ img {
     text-decoration: none;
     color: #000;
 }
+
+/*PC*/
+@media all and (max-width: 1024px) {
+
+}
+
+/*Máy tính bảng*/
+@media all and (max-width: 740px) {
+
+}
+
+/*trên điện thoại*/
+@media all and (max-width: 600px) {
+    .button {
+        font-size: 13px;
+    }
+}
