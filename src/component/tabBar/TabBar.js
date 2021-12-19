@@ -32,7 +32,7 @@ function TabBar(props) {
 			<Link to="/">
 				<CommentOutlined className='iconTabBar'/>
 			</Link>
-			<Link to="/about">
+			<Link to="/app-weather">
 				<YoutubeOutlined className='iconTabBar'/>
 			</Link>
 			<Link to="/about">

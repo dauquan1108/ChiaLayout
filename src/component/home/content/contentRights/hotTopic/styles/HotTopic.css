@@ -4,19 +4,22 @@
     background-color: #ffffff;
     position: relative;
 }
-.HotTopicTitle p {
-    font-family: SegoeUI;
+.HotTopicTitle {
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+.title {
     font-size: 15px;
+    font-weight: bold;
+    line-height: 1.35;
     color: #f2761c;
-    background-color: #ffffff;
-    margin: 0;
-    /* position: relative; */
-    z-index: 10;
+    margin-right: 6px;
+    text-transform: uppercase;
 }
 .brick {
-    width: 90%;
+    flex: 1;
     height: 1px;
-    top: 50%;
-    position: absolute;
-    background-color:#f2761c;
+    margin-bottom: 4px;
+    background-color: #f2761c;
 }
