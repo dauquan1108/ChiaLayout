@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
+// component
+import Icons from "../../icons/Icons";
 // style
-import "./style/Footer.css";
+import "./styles/Footer.css";
 
 function Footer(props) {
     return (
         <div className="footer">
             <div className="contentFooterTop">
-                <div className="logo">
-                    <span>HOME</span>
-                </div>
+                <Icons type="logoHome" widths="100px" className="Logo" />
                 <div className="contentText">
                     <p>Chuyên trang Sản phẩm Công nghệ của tạp chí điện tử Nhà đầu tư.</p>
                     <p>

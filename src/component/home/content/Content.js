@@ -15,7 +15,7 @@ import AdvertisementBig from "./contentRights/advertisement/AdvertisementBig";
 import HotTopic from "./contentRights/hotTopic/HotTopic";
 
 // styles
-import "./style/Content.css";
+import "./styles/Content.css";
 // images
 import avatar from "../../images/avatar.jpg";
 import album from "../../images/album.png";

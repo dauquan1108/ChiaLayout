@@ -25,16 +25,8 @@
     flex-direction: row;
     align-items: center;
 }
-
-.logo {
-    width: 20%;
-    height: 45px;
-    color: var(--color-text);
-    font-size: var(--border-radius);
-    border-radius: var(--border-radius);
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+.Logo {
+    margin-bottom: 20px;
 }
 
 .search {
@@ -49,11 +41,6 @@
 }
 .search span{
     color: #535353;
-}
-
-.iconImg {
-    width: 18px;
-    height: 18px;
 }
 
 .contentRight {

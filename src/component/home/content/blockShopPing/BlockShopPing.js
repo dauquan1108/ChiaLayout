@@ -4,9 +4,9 @@ import React, { useState } from "react";
 import "./styles/BlockShopPing.css";
 
 // image
-import lazada from "../../../images/lazada.png";
-import shopee from "../../../images/shopee.png";
-import tiki from "../../../images/tiki.png";
+import lazada from "../../../images/lazada.svg";
+import shopee from "../../../images/shopee.svg";
+import tiki from "../../../images/tiki.svg";
 import shopPing from "../../../images/shopping.png";
 function BlockShopPing(props) {
   const [listLogo, setListLogo] = useState([
@@ -67,7 +67,7 @@ function BlockShopPing(props) {
         {listLogo.map((item) => {
           return (
             <a key={item.id} href={item.titles}>
-              <img src={item.image} />
+              <img src={item.image} alt="icon Home" />
             </a>
           );
         })}
@@ -76,7 +76,7 @@ function BlockShopPing(props) {
         {title.map((item) => {
           return (
             <div className="blockShopPingRightItem">
-              <img key={item.id} src={shopPing} />
+              <img key={item.id} src={shopPing} alt="icon Home" />
               <a href="#" title={item.titles}>
                 {item.titles}
               </a>

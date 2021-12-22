@@ -9,7 +9,7 @@ import mic1 from "../appWeather/image/mic4.svg";
 import mic2 from "../appWeather/image/mic3.svg";
 
 // style
-import "./style/style.css";
+import "./styles/style.css";
 
 function Mic({ VietnameseKey, setColor }) {
   const [statusMic, setStatusMic] = useState(false);

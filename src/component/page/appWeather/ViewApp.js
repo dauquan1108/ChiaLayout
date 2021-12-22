@@ -5,7 +5,7 @@ import axios from "axios";
 // url
 import { URL_API, APP_ID } from "../appWeather/utils/URL";
 // style
-import "./style/style.css";
+import "./styles/style.css";
 //anh
 import search from "../appWeather/image/search1.svg";
 

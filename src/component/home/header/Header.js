@@ -1,15 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 
 // Component
 import Avatars from "../../avatar/Avatar";
+import Icons from "../../icons/Icons";
 
 // style
-import "./style/Header.css";
+import "./styles/Header.css";
 
 // image
-import Notifications from "../../images/notifications.png";
-import Chat from "../../images/chat.png";
-import gear from "../../images/gear.png";
 import avatar from "../../images/avatar.jpg";
 
 function Header(props) {
@@ -18,10 +16,10 @@ function Header(props) {
       <div className="contentHeader">
         <div className="contentLeft">
           <div className="logo">
-            <span>HOME</span>
+            <Icons type="logoHome" />
           </div>
           <div className="search">
-            <span>Google</span>
+            <Icons type="iconGoogle" widths="50px" heights="20px" />
           </div>
         </div>
         <div className="contentRight">
@@ -32,9 +30,9 @@ function Header(props) {
             </div>
           </div>
           <div className="options">
-            <img className="iconImg" src={Notifications} alt="notifications" />
-            <img className="iconImg" src={Chat} alt="chat" />
-            <img className="iconImg" src={gear} alt="gear" />
+            <Icons type="notifications" widths="18px" heights="18px" />
+            <Icons type="chat" widths="18px" heights="18px" />
+            <Icons type='gear' widths="18px" heights="18px" />
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import React from "react";
 import Content from "./content/Content";
 
 //style
-import "./style/Home.css";
+import "./styles/Home.css";
 
 function Home(props) {
 	return (
