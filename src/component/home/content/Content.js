@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // Component
-import Avatart from "../../avatar/Avatar";
+import Avatart from "../../base/avatar/Avatar";
 import PhoneBook from "./phoneBook/PhoneBook";
 import News from "./news/News";
 import BlockShopPing from "./blockShopPing/BlockShopPing";

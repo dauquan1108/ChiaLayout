@@ -1,6 +1,6 @@
 import React from "react";
 // component
-import Icons from "../../icons/Icons";
+import Icons from "../../base/icons/Icons";
 // style
 import "./styles/Footer.css";
 

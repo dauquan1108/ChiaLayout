@@ -5,32 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c6af6c6-7d83-4763-acf2-35caff9ddfc9" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/component/icons/Icons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/icons/styles/Icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/images/Home_Black_Logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/images/Home_logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/images/LogoGoogle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/images/iconGoogle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/images/lazada.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/images/shopee.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/images/tiki.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/theme/Theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/base/links/Links.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/images/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/images/home_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/images/media.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/images/media_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/images/option.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/images/option_active.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/avatar/Avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/base/avatar/Avatar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/avatar/styles/Avatar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/base/avatar/styles/Avatar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/home/content/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/content/Content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/home/content/blockShopPing/BlockShopPing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/content/blockShopPing/BlockShopPing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/home/content/style/Content.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/content/styles/Content.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/home/content/blockListNews/blockListNewsContent/BlockListNewsContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/content/blockListNews/blockListNewsContent/BlockListNewsContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/home/content/news/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/content/news/News.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/home/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/home/footer/style/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/footer/styles/Footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/home/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/home/header/style/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/header/styles/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/home/style/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/styles/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/page/appWeather/Mic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/page/appWeather/Mic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/page/appWeather/ViewApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/page/appWeather/ViewApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/page/appWeather/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/page/appWeather/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/tabBar/styles/TabBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tabBar/styles/TabBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/icons/Icons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/base/icons/Icons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/icons/styles/Icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/base/icons/styles/Icons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/tabBar/TabBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/base/tabBar/TabBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/tabBar/styles/TabBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/base/tabBar/styles/TabBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/theme/Theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/base/theme/Theme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +69,7 @@
       <recent name="F:\ReactJS\app-home\src\component\ page" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\ReactJS\app-home\src\component\base" />
       <recent name="F:\ReactJS\app-home\src\component\images" />
       <recent name="F:\ReactJS\app-home\src\component\ page\appWeather" />
       <recent name="F:\ReactJS\app-home\src\component\home\content" />
@@ -100,7 +96,8 @@
       <workItem from="1640008708769" duration="735000" />
       <workItem from="1640093907290" duration="371000" />
       <workItem from="1640094309038" duration="3053000" />
-      <workItem from="1640180456692" duration="9445000" />
+      <workItem from="1640180456692" duration="9488000" />
+      <workItem from="1640265545667" duration="9601000" />
     </task>
     <servers />
   </component>
@@ -117,5 +114,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

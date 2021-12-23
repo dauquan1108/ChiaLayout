@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 //component
 import HostNews from "./hostNews/HostNews";
-import Avatar from "../../../avatar/Avatar";
+import Avatar from "../../../base/avatar/Avatar";
 
 //style
 import "./styles/News.css";

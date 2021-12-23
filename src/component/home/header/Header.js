@@ -1,8 +1,8 @@
 import React from "react";
 
 // Component
-import Avatars from "../../avatar/Avatar";
-import Icons from "../../icons/Icons";
+import Avatars from "../../base/avatar/Avatar";
+import Icons from "../../base/icons/Icons";
 
 // style
 import "./styles/Header.css";

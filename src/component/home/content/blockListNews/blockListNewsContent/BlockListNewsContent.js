@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 // component
-import Avatar from "../../../../avatar/Avatar";
+import Avatar from "../../../../base/avatar/Avatar";
 
 //style
 import "./styles/BlockListNewsContent.css";

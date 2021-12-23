@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import ViewApp from "../src/component/page/appWeather/ViewApp";
 import Home from "./component/home/Home";
 import BackTops from './component/backTop/BackTops';
-import TabBar from "./component/tabBar/TabBar";
+import TabBar from "./component/base/tabBar/TabBar";
 import PageError from "./component/page/pageError/PageError";
 import Header from "./component/home/header/Header";
 import Footer from "./component/home/footer/Footer";
