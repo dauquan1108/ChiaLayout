@@ -1,7 +1,7 @@
 .blockListNewsContent {
     padding: 15px 10px;
     background-color: #fff;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     border-radius: 12px;
 }
 
@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: row;
 }
- 
+
 .blockListNewsContentTopLeft img {
     width: 183px;
     height: 140px;
@@ -36,7 +36,7 @@
     font-size: 15px;
     color: #0a747a;
 }
- 
+
 
 .individual p {
     margin: 10px;

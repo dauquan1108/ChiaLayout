@@ -36,9 +36,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
 }
-.postLefts p {
+.postLefts span {
     color: #535353;
     font-size: 15px;
     margin-left: 10px;

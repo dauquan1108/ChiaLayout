@@ -17,7 +17,6 @@ import HotTopic from "./contentRights/hotTopic/HotTopic";
 // styles
 import "./styles/Content.css";
 // images
-import avatar from "../../images/avatar.jpg";
 import album from "../../images/album.png";
 import attachment from "../../images/attachment.png";
 import smile from "../../images/smile.png";
@@ -40,6 +39,7 @@ import a17 from "../../images/a17.jpg";
 import a18 from "../../images/a18.jpg";
 import a19 from "../../images/a19.jpg";
 import a20 from "../../images/a20.jpg";
+import Icons from "../../base/icons/Icons";
 
 function Content(props) {
     const [listPhoneBook, setListPhoneBook] = useState([
@@ -70,10 +70,11 @@ function Content(props) {
                 <div className="contentLefts">
                     <div className="post">
                         <div className="postLefts">
-                            <Avatart src={avatar} />
-                            <p>Bạn đang nghĩ gì...?</p>
+                            <Avatart type='avatar' />
+                            <span>Bạn đang nghĩ gì...?</span>
                         </div>
                         <div className="postRights">
+                            {/*<Icons type='album' />*/}
                             <img className="imagesPost" src={album} alt="album" />
                             <img className="imagesPost" src={attachment} alt="attachment" />
                             <img className="imagesPost" src={smile} alt="smile" />

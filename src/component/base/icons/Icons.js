@@ -17,7 +17,14 @@ import homeActive from "../../images/home_active.svg";
 import media from "../../images/media.svg";
 import mediaActive from '../../images/media_active.svg';
 import option from "../../images/option.svg";
-import optionActive from "../../images/option_active.svg";
+import optionActive from '../../images/option_active.svg';
+import album from '../../images/album.jpg';
+import smile from '../../images/smile.jpg';
+import like from '../../images/icon-like.svg';
+import lazada from "../../images/lazada.svg";
+import shopee from "../../images/shopee.svg";
+import tiki from "../../images/tiki.svg";
+import shopPing from "../../images/shopping.png";
 
 
 const icons = {
@@ -33,6 +40,13 @@ const icons = {
     mediaActive,
     option,
     optionActive,
+    album,
+    smile,
+    like,
+    lazada,
+    shopee,
+    tiki,
+    shopPing,
 };
 const svgIcons = [
     'blackLogo',
@@ -47,15 +61,22 @@ const svgIcons = [
     'mediaActive',
     'option',
     'optionActive',
+    'album',
+    'smile',
+    'like',
+    'lazada',
+    'shopee',
+    'tiki',
+    'shopPing',
 ];
-function Icons({ type, widths, heights, className }) {
+function Icons({ type, widths, heights, className, alt }) {
     if (svgIcons.includes(type)) {
         return (
             <img
                 className={classNames("icons", className)}
                 style={{width: widths, height: heights}}
                 src={icons[type]}
-                alt="iconHome"
+                alt={`iconHome${alt}`}
             />
         );
     }
@@ -67,6 +88,7 @@ Icons.propTypes = {
     widths: PropTypes.string,
     heights: PropTypes.string,
     className: PropTypes.string,
+    alt: PropTypes.string,
 };
 
 Icons.defaultPros = {};
