@@ -1,14 +1,50 @@
 import React from "react";
+import styled from "styled-components";
+
 // component
 import Icons from "../../base/icons/Icons";
+import Links from "../../base/links/Links";
+
 // style
 import "./styles/Footer.css";
 
+const UnitFooter = styled.div`
+    background-color:${props => props.theme.backgroundColorUnit};
+    p {
+        font-size: 12px;
+        line-height: 2;
+        color:${props => props.theme.textColorFooter};
+    }
+    a {
+        font-size: 12px;
+        text-decoration: none;
+        color:${props => props.theme.textColorFooter};
+    }
+    span {
+        color:${props => props.theme.textColorFooter};
+        font-size: 12px;
+        line-height: 2;
+    }
+`;
+
+const Like = styled.div`
+    width: 100%;
+    height: 0.5px;
+    background-color: #393939;    
+`;
+
+const TitleFooter = styled.p`
+    margin-top: 20px;
+    color: #17b582 !important;
+`;
+
 function Footer(props) {
     return (
-        <div className="footer">
+        <UnitFooter className="footer">
             <div className="contentFooterTop">
-                <Icons type="logoHome" widths="100px" className="Logo" />
+                <Links to={"/"}>
+                    <Icons type="logoHome" widths="100px" className="Logo" />
+                </Links>
                 <div className="contentText">
                     <p>Chuyên trang Sản phẩm Công nghệ của tạp chí điện tử Nhà đầu tư.</p>
                     <p>
@@ -29,9 +65,9 @@ function Footer(props) {
                     <p>Quy định và điều khoản sử dụng</p>
                 </div>
             </div>
-            <div className="like" />
+            <Like />
             <div className="contentFooterBottom">
-                <p>Liên hệ quảng cáo</p>
+                <TitleFooter>Liên hệ quảng cáo</TitleFooter>
                 <span>
                     Email:<a href="QC@vnreview.vn"> QC@vnreview.vn</a>
                 </span>
@@ -39,7 +75,7 @@ function Footer(props) {
                     Hotline:<a href="tel:0978.19.00.77"> 0978.19.00.77</a>
                 </span>
             </div>
-        </div>
+        </UnitFooter>
     );
 }
 

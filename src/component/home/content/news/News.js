@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 //component
 import Avatart from "../../../base/avatar/Avatar";
+import CreatePathUrl from "../../../base/createPathUrl/CreatePathUrl";
+import Links from "../../../base/links/Links";
 
 //style
 import "./styles/News.css";
@@ -53,23 +55,31 @@ function News(props) {
     const [status, setStatus] = useState("noiBat");
     const listHostNewLeft = listNews.slice(0, 1).map((item) => {
         const img = item.image;
+        const urls = CreatePathUrl(item.titles, item.id);
+        const urlsName =CreatePathUrl('quan', '11081999', 'page');
+
         return (
             <React.Fragment>
                 <img className="imageHost" src={img} alt="anh" />
-                <div className="personalInformation">
-                    <Avatart type='avatar' />
-                    <a href='#' title={'Đậu Xuân Quân'}>Đậu Xuân Quân</a>
-                    <span>16 phút trước</span>
-                </div>
+                    <Links to={urlsName} className="personalInformation" >
+                        <Avatart type='avatar' />
+                        <div className="account">
+                            <p>Đậu Xuân Quân</p>
+                        </div>
+                        <span>16 phút trước</span>
+                    </Links>
                 <div className="ItemLeftTitle">
-                    <a href='#' title={item.titles}>{item.titles}</a>
+                    <Links to={urls} title={item && item.titles}>
+                        <span>{item && item.titles}</span>
+                    </Links>
                 </div>
             </React.Fragment>
         );
     });
 
     const listHostNewRight = listNews.slice(1, 6).map((item) => {
-        const img = item.image;
+        const img = item && item.image;
+        const urls = CreatePathUrl(item.titles, item.id);
         return (
             <React.Fragment>
                 <div className="itemRight">
@@ -77,9 +87,9 @@ function News(props) {
                         <img src={img} alt="hostNews" />
                     </div>
                     <div className="ItemRightTitle">
-                        <a href="#" title={item.titles}>
-                            {item.titles}
-                        </a>
+                        <Links to={urls} title={item && item.titles}>
+                            <span>{item && item.titles}</span>
+                        </Links>
                     </div>
                 </div>
             </React.Fragment>
@@ -88,79 +98,77 @@ function News(props) {
 
     return (
         <div className="news">
-            <React.Fragment>
-                <div className="hostNews">
-                    <div className="title">
-                        <div className="titleText ">
-                            <button
-                                type="button"
-                                className={`button ${status === "noiBat" && "titleActive"} `}
-                                onClick={() => setStatus("noiBat")}
-                            >
-                                Nổi bật
-                            </button>
-                        </div>
-                        <div className="titleText ">
-                            <button
-                                type="button"
-                                className={`button ${status === "tinTuc" && "titleActive"} `}
-                                onClick={() => setStatus("tinTuc")}
-                            >
-                                Tin tức
-                            </button>
-                        </div>
-                        <div className="titleText">
-                            <button
-                                type="button"
-                                className={`button ${status === "xuHuong" && "titleActive"} `}
-                                onClick={() => setStatus("xuHuong")}
-                            >
-                                Xu hướng
-                            </button>
-                        </div>
-                        <div className="titleText">
-                            <button
-                                type="button"
-                                className={`button ${status === "thoiSu" && "titleActive"} `}
-                                onClick={() => setStatus("thoiSu")}
-                            >
-                                Thời sự
-                            </button>
-                        </div>
-                        <div className="titleText">
-                            <button
-                                type="button"
-                                className={`button ${status === "TheThao" && "titleActive"} `}
-                                onClick={() => setStatus("TheThao")}
-                            >
-                                Thể thao
-                            </button>
-                        </div>
-                        <div className="titleText">
-                            <button
-                                type="button"
-                                className={`button ${status === "PhapLuat" && "titleActive"} `}
-                                onClick={() => setStatus("PhapLuat")}
-                            >
-                                Pháp luật
-                            </button>
-                        </div>
-                        <div className="titleText">
-                            <button
-                                type="button"
-                                className={`button ${status === "dienDan" && "titleActive"} `}
-                                onClick={() => setStatus("dienDan")}
-                            >
-                                Diễn đàn
-                            </button>
-                        </div>
+            <div className="hostNews">
+                <div className="title">
+                    <div className="titleText ">
+                        <button
+                            type="button"
+                            className={`button ${status === "noiBat" && "titleActive"} `}
+                            onClick={() => setStatus("noiBat")}
+                        >
+                            Nổi bật
+                        </button>
                     </div>
-                    <div className="newsContent">
-                        <div className="newsContentLeft">{listHostNewLeft}</div>
-                        <div className="newsContentRight">{listHostNewRight}</div>
+                    <div className="titleText ">
+                        <button
+                            type="button"
+                            className={`button ${status === "tinTuc" && "titleActive"} `}
+                            onClick={() => setStatus("tinTuc")}
+                        >
+                            Tin tức
+                        </button>
+                    </div>
+                    <div className="titleText">
+                        <button
+                            type="button"
+                            className={`button ${status === "xuHuong" && "titleActive"} `}
+                            onClick={() => setStatus("xuHuong")}
+                        >
+                            Xu hướng
+                        </button>
+                    </div>
+                    <div className="titleText">
+                        <button
+                            type="button"
+                            className={`button ${status === "thoiSu" && "titleActive"} `}
+                            onClick={() => setStatus("thoiSu")}
+                        >
+                            Thời sự
+                        </button>
+                    </div>
+                    <div className="titleText">
+                        <button
+                            type="button"
+                            className={`button ${status === "TheThao" && "titleActive"} `}
+                            onClick={() => setStatus("TheThao")}
+                        >
+                            Thể thao
+                        </button>
+                    </div>
+                    <div className="titleText">
+                        <button
+                            type="button"
+                            className={`button ${status === "PhapLuat" && "titleActive"} `}
+                            onClick={() => setStatus("PhapLuat")}
+                        >
+                            Pháp luật
+                        </button>
+                    </div>
+                    <div className="titleText">
+                        <button
+                            type="button"
+                            className={`button ${status === "dienDan" && "titleActive"} `}
+                            onClick={() => setStatus("dienDan")}
+                        >
+                            Diễn đàn
+                        </button>
                     </div>
                 </div>
-            </React.Fragment>
+                <div className="newsContent">
+                    <div className="newsContentLeft">{listHostNewLeft}</div>
+                    <div className="newsContentRight">{listHostNewRight}</div>
+                </div>
+            </div>
         </div>
     );
 }

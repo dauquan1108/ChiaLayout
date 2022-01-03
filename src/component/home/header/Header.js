@@ -1,31 +1,45 @@
 import React from "react";
+import styled from "styled-components";
 
 // Component
 import Avatart from "../../base/avatar/Avatar";
 import Icons from "../../base/icons/Icons";
+import Links from "../../base/links/Links";
 
 // style
 import "./styles/Header.css";
+import CreatePathUrl from "../../base/createPathUrl/CreatePathUrl";
+
+const UnitHeader = styled.div`
+    background-color:${props => props.theme.backgroundColorUnit};
+`;
+
+const UnitSearch = styled.div`
+    background-color: ${props => props.theme.backGroundTransparent};
+`;
 
 function Header(props) {
+    const urls =CreatePathUrl('quan', '11081999', 'page');
     return (
-        <div className="header">
+        <UnitHeader className="header">
             <div className="contentHeader">
                 <div className="contentLeft">
                     <div className="logo">
-                        <Icons type="logoHome" />
+                        <Links to={"/"}>
+                            <Icons type="logoHome" />
+                        </Links>
                     </div>
-                    <div className="search">
-                        <Icons type="iconGoogle" widths="50px" heights="20px" />
-                    </div>
+                    <UnitSearch className="search">
+                        <Icons type="iconGoogle" widths="60px" heights="20px" />
+                    </UnitSearch>
                 </div>
                 <div className="contentRight">
-                    <div className="user">
+                    <Links to={urls} className="user">
                         <Avatart type='avatar' />
                         <div className="account">
                             <span>Đậu Xuân Quân</span>
                         </div>
-                    </div>
+                    </Links>
                     <div className="options">
                         <Icons type="notifications" widths="18px" heights="18px" />
                         <Icons type="chat" widths="18px" heights="18px" />
@@ -33,7 +47,7 @@ function Header(props) {
                     </div>
                 </div>
             </div>
-        </div>
+        </UnitHeader>
     );
 }
 

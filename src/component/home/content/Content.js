@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 // Component
-import Avatart from "../../base/avatar/Avatar";
 import PhoneBook from "./phoneBook/PhoneBook";
 import News from "./news/News";
 import BlockShopPing from "./blockShopPing/BlockShopPing";
@@ -16,10 +15,8 @@ import HotTopic from "./contentRights/hotTopic/HotTopic";
 
 // styles
 import "./styles/Content.css";
+
 // images
-import album from "../../images/album.png";
-import attachment from "../../images/attachment.png";
-import smile from "../../images/smile.png";
 import a1 from "../../images/a1.jpg";
 import a2 from "../../images/a2.jpg";
 import a3 from "../../images/a3.jpg";
@@ -39,7 +36,7 @@ import a17 from "../../images/a17.jpg";
 import a18 from "../../images/a18.jpg";
 import a19 from "../../images/a19.jpg";
 import a20 from "../../images/a20.jpg";
-import Icons from "../../base/icons/Icons";
+import Post from "./post/Post";
 
 function Content(props) {
     const [listPhoneBook, setListPhoneBook] = useState([
@@ -68,18 +65,7 @@ function Content(props) {
         <div className="contents">
             <div className="contents_body">
                 <div className="contentLefts">
-                    <div className="post">
-                        <div className="postLefts">
-                            <Avatart type='avatar' />
-                            <span>Bạn đang nghĩ gì...?</span>
-                        </div>
-                        <div className="postRights">
-                            {/*<Icons type='album' />*/}
-                            <img className="imagesPost" src={album} alt="album" />
-                            <img className="imagesPost" src={attachment} alt="attachment" />
-                            <img className="imagesPost" src={smile} alt="smile" />
-                        </div>
-                    </div>
+                   <Post />
                     <div className="phoneBook">
                         {listPhoneBook.map((item) => {
                             return (
@@ -87,27 +73,15 @@ function Content(props) {
                             );
                         })}
                     </div>
-                    <div className="news">
-                        <News />
-                    </div>
-                    <div className="blockShopPing">
-                        <BlockShopPing />
-                    </div>
-                    <div className="blockListNews">
-                        <BlockListNews />
-                    </div>
+                    <News />
+                    <BlockShopPing />
+                    <BlockListNews />
                 </div>
                 <div className="contentRights">
-                    <div className="weather">
-                        <Weather />
-                    </div>
-                    <div className="advertisement">
-                        <Advertisement />
-                    </div>
+                    <Weather />
+                    <Advertisement />
                     <Utilities />
-                    <div className="advertisement">
-                        <AdvertisementBig />
-                    </div>
+                    <AdvertisementBig />
                     <HotTopic />
                 </div>
             </div>

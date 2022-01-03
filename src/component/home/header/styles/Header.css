@@ -9,7 +9,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #0a747a;
+    /*background-color: #0a747a;*/
 }
 .contentHeader {
     width: 60%;
@@ -34,7 +34,7 @@
     height: 32px;
     margin: 0 10%;
     border-radius: var(--border-radius);
-    background-color: var(--color-text);
+    /*background-color: var(--color-text);*/
     display: flex;
     align-items: center;
     justify-content: center;

@@ -5,24 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c6af6c6-7d83-4763-acf2-35caff9ddfc9" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/component/base/createPathUrl/ConvertVietnamese.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/base/createPathUrl/CreatePathUrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/images/AvatarDefault.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/images/album.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/images/attachment.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/images/icon-like.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/images/smile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/home/content/post/Post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/home/content/post/styles/Post.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/images/Home_Black.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/images/camera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/images/iconGooglef.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/images/love.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/images/photo-album.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/base/avatar/Avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/base/avatar/Avatar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/base/createPathUrl/ConvertVietnamese.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/base/icons/Icons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/base/icons/Icons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/base/links/Links.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/base/links/Links.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/base/theme/Theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/base/theme/Theme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/home/content/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/content/Content.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/home/content/blockListNews/blockListNewsContent/BlockListNewsContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/content/blockListNews/blockListNewsContent/BlockListNewsContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/home/content/blockListNews/blockListNewsContent/styles/BlockListNewsContent.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/content/blockListNews/blockListNewsContent/styles/BlockListNewsContent.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/home/content/blockShopPing/BlockShopPing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/content/blockShopPing/BlockShopPing.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/home/content/blockShopPing/styles/BlockShopPing.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/content/blockShopPing/styles/BlockShopPing.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/home/content/contentRights/weather/Weather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/content/contentRights/weather/Weather.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/home/content/contentRights/weather/styles/Weather.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/content/contentRights/weather/styles/Weather.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/home/content/news/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/content/news/News.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/home/content/news/styles/News.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/content/news/styles/News.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/home/content/styles/Content.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/content/styles/Content.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/home/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/home/footer/styles/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/footer/styles/Footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/home/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/home/header/styles/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/header/styles/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/images/album.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/images/album.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/images/iconGoogle.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/images/iconGoogle.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/component/page/appWeather" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/component/base/createPathUrl" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -61,6 +72,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\ReactJS\app-home\src\component\base\createPathUrl" />
       <recent name="F:\ReactJS\app-home\src\component\page\appWeather" />
       <recent name="F:\ReactJS\app-home\src\component\ page\appWeather" />
       <recent name="F:\ReactJS\app-home\src\component\ page" />
@@ -95,7 +107,10 @@
       <workItem from="1640094309038" duration="3053000" />
       <workItem from="1640180456692" duration="9488000" />
       <workItem from="1640265545667" duration="10867000" />
-      <workItem from="1640613092181" duration="9728000" />
+      <workItem from="1640613092181" duration="10295000" />
+      <workItem from="1640700982247" duration="5033000" />
+      <workItem from="1640936131867" duration="13468000" />
+      <workItem from="1641213958219" duration="4221000" />
     </task>
     <servers />
   </component>
@@ -113,5 +128,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
 </project>

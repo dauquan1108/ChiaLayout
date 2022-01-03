@@ -18,7 +18,7 @@
 .blockListNewsContentTopRight {
     margin-left: 10px;
 }
-.blockListNewsContentTopRight a {
+.blockListNewsContentTopRight span {
     color: #000;
     font-size: 20px;
     font-weight: 500;
@@ -31,7 +31,13 @@
     margin: 10px 0;
 }
 
-.individual a {
+.page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.individual span {
     margin-left: 10px;
     font-size: 15px;
     color: #0a747a;

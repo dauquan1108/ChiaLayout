@@ -8,7 +8,7 @@ import "./styles/Icons.css";
 // image
 import blackLogo from "../../images/Home_Black_Logo.svg";
 import logoHome from "../../images/Home_logo.svg";
-import iconGoogle from "../../images/iconGoogle.png"
+import iconGoogle from "../../images/iconGooglef.png"
 import chat from "../../images/chat.png";
 import gear from "../../images/gear.png";
 import notifications from "../../images/notifications.png";
@@ -18,14 +18,14 @@ import media from "../../images/media.svg";
 import mediaActive from '../../images/media_active.svg';
 import option from "../../images/option.svg";
 import optionActive from '../../images/option_active.svg';
-import album from '../../images/album.jpg';
-import smile from '../../images/smile.jpg';
+import album from '../../images/album.png';
 import like from '../../images/icon-like.svg';
 import lazada from "../../images/lazada.svg";
 import shopee from "../../images/shopee.svg";
 import tiki from "../../images/tiki.svg";
 import shopPing from "../../images/shopping.png";
-
+import attachment from "../../images/camera.png"
+import smile from "../../images/love.png";
 
 const icons = {
     blackLogo,
@@ -47,6 +47,7 @@ const icons = {
     shopee,
     tiki,
     shopPing,
+    attachment,
 };
 const svgIcons = [
     'blackLogo',
@@ -68,6 +69,7 @@ const svgIcons = [
     'shopee',
     'tiki',
     'shopPing',
+    'attachment',
 ];
 function Icons({ type, widths, heights, className, alt }) {
     if (svgIcons.includes(type)) {

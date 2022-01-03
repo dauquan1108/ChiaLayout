@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 // component
 import Avatart from "../../../../base/avatar/Avatar";
+import Links from "../../../../base/links/Links";
 
 //style
 import "./styles/BlockListNewsContent.css";
@@ -11,21 +12,30 @@ import like from "../../../../images/like.png";
 import message from "../../../../images/message.png";
 import share from "../../../../images/share.png";
 import Icons from "../../../../base/icons/Icons";
+import CreatePathUrl from "../../../../base/createPathUrl/CreatePathUrl";
 
 
 function BlockListNewsContent({ item }) {
+    const urls = CreatePathUrl(item && item.titles, item && item.id);
+    const urlsName =CreatePathUrl('quan', '11081999', 'page');
     return (
         <div className="blockListNewsContent">
             <div className="blockListNewsContentTop">
                 <div className="blockListNewsContentTopLeft">
-                    <img src={item.image} alt="image view" />
+                    <img src={item && item.image} alt="image view" />
                 </div>
                 <div className="blockListNewsContentTopRight">
-                    <a href={'#'} title={item.titles}>{item.titles}</a>
+                    <Links to={urls} title={item && item.titles}>
+                        <span>{item && item.titles}</span>
+                    </Links>
                     <div className="individual">
-                        <Avatart type='avatar' />
-                        <a href={'#'} title={item.name} >{item.name}</a>
-                        <p>{item.time}</p>
+                        <Links to={urlsName} className="page">
+                            <Avatart type='avatar' />
+                            <div className="account">
+                                <span>Đậu Xuân Quân</span>
+                            </div>
+                        </Links>
+                        <p>{item && item.time}</p>
                     </div>
                 </div>
             </div>

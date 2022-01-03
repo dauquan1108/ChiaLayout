@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // Component
 import Icons from "../../../base/icons/Icons";
 import CreatePathUrl from '../../../base/createPathUrl/CreatePathUrl';
-
+import Links from "../../../base/links/Links";
 //style
 import "./styles/BlockShopPing.css";
 
@@ -12,18 +12,17 @@ function BlockShopPing(props) {
         {
             id: 1,
             image: 'lazada',
-            titles:
-                "Đánh giá iPhone 13 và iPhone 13 mini từ các trang công nghệ quốc tế",
+            titles: 'lazada.vn',
         },
         {
             id: 2,
             image: 'shopee',
-            titles: "Những ứng viên sáng giá cho Nobel Y sinh 2021",
+            titles: 'shopee.vn',
         },
         {
             id: 3,
             image: 'tiki',
-            titles: "Một số tỉnh miền Tây cho người về quê cách ly tại nhà",
+            titles: 'tiki.vn',
         },
     ]);
 
@@ -61,31 +60,31 @@ function BlockShopPing(props) {
     ]);
 
     return (
-        <React.Fragment>
+        <div className="blockShopPing">
             <div className="blockShopPingLeft">
                 {listLogo.map((item) => {
                    const urls = CreatePathUrl(item.titles, item.id);
                     return (
-                        <a key={item.id} href={urls}>
+                        <Links to={urls} key={item.id} title={item && item.titles}>
                             <Icons type={item.image} widths='90px' />
-                        </a>
+                        </Links>
                     );
                 })}
             </div>
             <div className="blockShopPingRight">
                 {title.map((item) => {
-                    const urls = CreatePathUrl(item.titles, item.id);
+                    const urls = CreatePathUrl( item && item.titles, item && item.id);
                     return (
-                        <div className="blockShopPingRightItem" key={item.id}>
+                        <div className="blockShopPingRightItem" key={item && item.id}>
                             <Icons type='shopPing' />
-                            <a href={urls} title={item.titles}>
-                                {item.titles}
-                            </a>
+                            <Links to={urls} title={item && item.titles}>
+                                <span>{item && item.titles}</span>
+                            </Links>
                         </div>
                     );
                 })}
             </div>
-        </React.Fragment>
+        </div>
     );
 }
 

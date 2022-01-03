@@ -1,0 +1,31 @@
+.post {
+    height: 52px;
+    padding: 1px 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.postLefts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.postLefts span {
+    color: #535353;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.postRights {
+    width: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imagesPost {
+    width: 15px;
+    height: 15px
+}
